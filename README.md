@@ -1,6 +1,7 @@
 # NolimitID-FE
 
-Proyek ini adalah aplikasi frontend yang dibangun menggunakan teknologi modern untuk pengembangan web.
+Test Frontend Engineer - Nolimit Indonensia, 
+ini adalah aplikasi frontend yang dibangun menggunakan teknologi modern untuk pengembangan web.
 
 ## Teknologi dan Library Utama
 
