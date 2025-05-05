@@ -1,12 +1,44 @@
-# React + Vite
+# NolimitID-FE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyek ini adalah aplikasi frontend yang dibangun menggunakan teknologi modern untuk pengembangan web.
 
-Currently, two official plugins are available:
+## Teknologi dan Library Utama
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Core Libraries
+- **React** - Library JavaScript untuk membangun antarmuka pengguna
+- **Vite** - Build tool yang sangat cepat untuk proyek modern
 
-## Expanding the ESLint configuration
+### State Management
+- **Zustand** - Library state management yang ringan dan mudah digunakan, memberikan solusi yang simpel untuk mengelola state global aplikasi
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Data Visualization
+- **Chart.js** - Library JavaScript yang powerful untuk membuat grafik dan visualisasi data
+- **react-chartjs-2** - Wrapper React untuk Chart.js yang memudahkan implementasi Chart.js dalam aplikasi React
+
+### Styling
+- **Tailwind CSS** - Framework CSS utility-first yang memungkinkan pengembangan UI yang cepat dan fleksibel
+- **PostCSS** - Tool untuk transformasi CSS dengan JavaScript
+- **Autoprefixer** - Plugin PostCSS untuk menambahkan vendor prefixes secara otomatis
+
+### HTTP Client
+- **Axios** - Library HTTP client yang powerful untuk melakukan request API
+
+### Development Tools
+- **ESLint** - Tool untuk analisis kode statis dan penegakan standar kode
+- **HMR (Hot Module Replacement)** - Fitur untuk pembaruan modul secara langsung tanpa refresh halaman
+
+## Memulai Pengembangan
+
+1. Install dependensi:
+```bash
+npm install
+```
+2. Jalankan aplikasi:
+```bash
+npm run dev
+```
+3. Buka browser dan akses `ht```
+2. Jalankan aplikasi:
+```bash
+npm run dev
+```
