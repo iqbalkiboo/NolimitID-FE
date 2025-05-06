@@ -46,19 +46,21 @@ export default function PopulationChart() {
 
   return (
     <div>
-      <h2 className="text-lg font-semibold mb-2">Population per Year</h2>
+      <h1 className="text-2xl font-bold mb-4 text-center">
+        Population per Year
+      </h1>
       <div className="mb-6 bg-white rounded-lg shadow-sm border border-gray-200">
         <YearRangeFilter />
       </div>
       <div className="mb-6 p-6 bg-white rounded-lg shadow-sm border border-gray-200">
         <div className="mb-6">
-          <label className="font-semibold mb-4">Line Chart</label>
+          <h2 className="text-xl font-bold mb-2 text-blue-700">Line Chart</h2>
         </div>
         <Line data={chartData} />
       </div>
       <div className="mb-6 p-6 bg-white rounded-lg shadow-sm border border-gray-200">
         <div className="mb-6">
-          <label className="font-semibold mb-4">Pie Chart</label>
+          <h2 className="text-xl font-bold mb-2 text-blue-700">Pie Chart</h2>
         </div>
         <Pie data={chartData} />
       </div>

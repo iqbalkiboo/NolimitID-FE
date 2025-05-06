@@ -15,42 +15,50 @@ export default function YearRangeFilter() {
   }, [years]);
 
   const handleFilter = () => {
-    if (startYear && endYear) {
-      filterByYearRange(startYear, endYear);
-    }
+      if (parseInt(endYear) < parseInt(startYear)) {
+        alert("Tahun Akhir tidak boleh lebih kecil dari Tahun Awal!");
+        return;
+      }
+      filterByYearRange(startYear, endYear); 
   };
 
   return (
     <div className="p-4">
       <h3 className="text-md font-semibold mb-2">Filter Tahun</h3>
-      <div className="flex gap-2 items-center">
-        <label htmlFor="startYear">Tahun Awal:</label>
-        <select
-          value={startYear}
-          onChange={(e) => setStartYear(e.target.value)}
-          className="border px-2 py-1 rounded"
-        >
-          {years.map((y) => (
-            <option key={y} value={y}>
-              {y}
-            </option>
-          ))}
-        </select>
-        <label htmlFor="startYear">Tahun Akhir:</label>
-        <select
-          value={endYear}
-          onChange={(e) => setEndYear(e.target.value)}
-          className="border px-2 py-1 rounded"
-        >
-          {years.map((y) => (
-            <option key={y} value={y}>
-              {y}
-            </option>
-          ))}
-        </select>
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+          <label htmlFor="startYear">Tahun Awal:</label>
+          <select
+            id="startYear"
+            value={startYear}
+            onChange={(e) => setStartYear(e.target.value)}
+            className="border px-2 py-1 rounded"
+          >
+            {years.map((y) => (
+              <option key={y} value={y}>
+                {y}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+          <label htmlFor="endYear">Tahun Akhir:</label>
+          <select
+            id="endYear"
+            value={endYear}
+            onChange={(e) => setEndYear(e.target.value)}
+            className="border px-2 py-1 rounded"
+          >
+            {years.map((y) => (
+              <option key={y} value={y}>
+                {y}
+              </option>
+            ))}
+          </select>
+        </div>
         <button
           onClick={handleFilter}
-          className="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700"
+          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm w-full sm:w-auto"
         >
           Terapkan
         </button>
